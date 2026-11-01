@@ -1,0 +1,31 @@
+# Build
+target/
+*.class
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Nagy, újra előállítható adatok: csak a leírásuk kerül a repóba
+data/*
+!data/README.md
+results/*
+!results/README.md
+
+# Helyi beállítások (eszközök útvonalai gépenként mások)
+config/tools.local.properties
+
+# OS
+.DS_Store
+Thumbs.db

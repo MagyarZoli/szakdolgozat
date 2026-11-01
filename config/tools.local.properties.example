@@ -1,0 +1,6 @@
+# Másold le tools.local.properties néven, és írd át a saját gépedre.
+# Ez a fájl nem kerül a repóba.
+
+osa.home=/opt/OpenStaticAnalyzer-1.1-Linux
+# Windows példa (perjellel is működik):
+# osa.home=C:/tools/OpenStaticAnalyzer-1.1-Windows

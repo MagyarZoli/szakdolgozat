@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kézi ellenőrzésre szánt, nyelvi elemekben gazdag mintaprogram.
+     A "mvn package" után a bájtkód: test-programs/target/sample-app.jar, a forrás: test-programs/src/main/java -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>hu.thesis</groupId>
+        <artifactId>callgraph-graphlets</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>test-programs</artifactId>
+    <name>test-programs</name>
+
+    <build>
+        <finalName>sample-app</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <!-- Sorinformáció és paraméternevek a bájtkódban a kézi ellenőrzéshez -->
+                    <debug>true</debug>
+                    <parameters>true</parameters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
